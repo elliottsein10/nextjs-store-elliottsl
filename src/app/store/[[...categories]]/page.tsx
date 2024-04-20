@@ -10,6 +10,7 @@ interface CategoryProps {
 
 export default async function Category(props: CategoryProps){
     const products = await getProducts()
+  
     const { categories } = props.params
     return(
        <ProductsWrapper products={products}/>
