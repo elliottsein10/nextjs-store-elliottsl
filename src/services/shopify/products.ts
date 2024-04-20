@@ -38,7 +38,7 @@ export const getMainProducts = async () => {
         }),
         cache: 'force-cache',
         next: {
-            tags: ['main-products']
+            revalidate: 10
         }
     })
 
